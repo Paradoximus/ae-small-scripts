@@ -1,0 +1,2 @@
+# LF in the repo; ExtendScript and the panel's header parser read both LF and CRLF
+* text=auto eol=lf

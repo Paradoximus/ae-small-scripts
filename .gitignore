@@ -1,0 +1,15 @@
+# Local only, not part of the public repo
+_archive/
+NOTES.private.md
+.claude/
+*.code-workspace
+_dev/ae_command_ids_2025.json
+
+# Temp files written by _dev/ae_stub_expr_dump.js
+_dev/expr_*.js
+
+# Backups and OS junk
+*.bak
+desktop.ini
+Thumbs.db
+.DS_Store
