@@ -28,7 +28,8 @@ function targetFrom(argv, stdin) {
 }
 
 function relevant(file) {
-  const n = norm(file);
+  // относительный путь (ручной прогон) — от текущей папки; иначе он «не из корня» и молча пропускается
+  const n = norm(path.resolve(file));
   if (!/\.(jsx|js)$/.test(n)) return false;
   const root = norm(ROOT);
   if (!n.startsWith(root + '/')) return false;
